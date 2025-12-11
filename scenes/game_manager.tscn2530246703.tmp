@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://0e7y7m3pnwf5"]
+
+[ext_resource type="Script" uid="uid://1taw111amex2" path="res://script/game_manager.gd" id="1_hwd4i"]
+[ext_resource type="AudioStream" uid="uid://dx3e2824nghmy" path="res://assets/Sounds/Light Ambience 2.mp3" id="2_udu3i"]
+[ext_resource type="PackedScene" uid="uid://ddb7sy8vmrrf3" path="res://scenes/gui.tscn" id="3_udu3i"]
+[ext_resource type="AudioStream" uid="uid://cbo51pv13c1u8" path="res://assets/Sounds/Retro Magic 34.wav" id="4_eaq8r"]
+[ext_resource type="AudioStream" uid="uid://hx4do7dv701m" path="res://assets/Sounds/Retro Jump Classic 08.wav" id="4_oo155"]
+[ext_resource type="AudioStream" uid="uid://wym78r7iwyl3" path="res://assets/Sounds/Retro Explosion Short 01.wav" id="5_ternb"]
+[ext_resource type="AudioStream" uid="uid://tu824lawphj4" path="res://assets/Sounds/Retro Blop StereoUP 09.wav" id="6_q8mjp"]
+
+[node name="GameManager" type="Node"]
+script = ExtResource("1_hwd4i")
+
+[node name="CoinsSoundPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -24.415
+
+[node name="Background" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_udu3i")
+volume_db = -19.083
+autoplay = true
+parameters/looping = true
+
+[node name="JumpSoundPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_oo155")
+volume_db = -18.495
+
+[node name="MagicSoundPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_eaq8r")
+volume_db = -31.301
+
+[node name="DeathSoundPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_ternb")
+volume_db = -22.899
+
+[node name="EnemyDeathSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_q8mjp")
+volume_db = -16.054
+
+[node name="GUI" parent="." instance=ExtResource("3_udu3i")]
+visible = false

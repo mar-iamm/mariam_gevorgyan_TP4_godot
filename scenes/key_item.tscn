@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://dyr32sobk3nfi"]
+
+[ext_resource type="Script" uid="uid://cisxfu5t1487t" path="res://script/key_item.gd" id="1_js8n2"]
+[ext_resource type="Texture2D" uid="uid://boq6iv1bikv88" path="res://assets/Coins/key.png" id="2_obpqi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_obpqi"]
+size = Vector2(210, 91)
+
+[sub_resource type="Gradient" id="Gradient_js8n2"]
+offsets = PackedFloat32Array(0.07333333, 0.7733333)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_obpqi"]
+gradient = SubResource("Gradient_js8n2")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="KeyItem" type="Area2D"]
+script = ExtResource("1_js8n2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 1.5)
+shape = SubResource("RectangleShape2D_obpqi")
+
+[node name="Key" type="Sprite2D" parent="."]
+texture = ExtResource("2_obpqi")
+
+[node name="Message" type="Node2D" parent="."]
+visible = false
+
+[node name="Etiquette" type="Label" parent="Message"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.0
+offset_top = -119.5
+offset_right = 102.0
+offset_bottom = -77.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(0.5000038, -7.5000086)
+scale = Vector2(5.453125, 2.5468748)
+texture = SubResource("GradientTexture2D_obpqi")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

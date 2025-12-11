@@ -1,0 +1,17 @@
+res://scenes/game_manager.tscn::1d141243fd4e174928fef3116333ec4d::1765410318::res://.godot/exported/133200997/export-18773aed85e32f6f60d8a5aa586802e3-game_manager.scn
+res://scenes/coin.tscn::edf7068e88eee2fd17bda8d43c86a5de::1762984766::res://.godot/exported/133200997/export-96b2131180b71dd158e52c5527d22dd4-coin.scn
+res://scenes/enemy.tscn::4d2306f1a44f989dd9ac3930444b0c20::1762988256::res://.godot/exported/133200997/export-a930820ec0ab16db6719aff4daa500f9-enemy.scn
+res://scenes/hud.tscn::489eade4dcf5695698d401895e9337cc::1762308392::res://.godot/exported/133200997/export-38bf74ff262409a94a41206b2b776d33-hud.scn
+res://scenes/key_item.tscn::b75e60f9416a16c106c3f7c5a7716de4::1762306130::res://.godot/exported/133200997/export-612684c88f53d612e7c32782486b3c9b-key_item.scn
+res://scenes/level_door.tscn::8be7c851ccc9323aca19f6d1dfce5d24::1762291684::res://.godot/exported/133200997/export-cc7c045880128128e8cab11bebdbf618-level_door.scn
+res://scenes/magic.tscn::b64704dfb44e4f5d2d940fec4263b719::1762987034::res://.godot/exported/133200997/export-08874c322ad38fda9ee950e5da9f2e48-magic.scn
+res://scenes/magic_area.tscn::3305529cd08a2d42ac1831f2caf7aa0f::1761839804::res://.godot/exported/133200997/export-c518006c526d649cf332c9b1a9ec02c3-magic_area.scn
+res://scenes/main_menu.tscn::c75f626d1137ab00819077e0b7b8de1e::1765416860::res://.godot/exported/133200997/export-ea5c6ad4629af728dc514cefde332394-main_menu.scn
+res://scenes/menu_pause.tscn::6824ac55a7fc44bfbe1a54c8b9a6fd2a::1765413868::res://.godot/exported/133200997/export-b0a5542d766405fa25de8b621f48e5eb-menu_pause.scn
+res://scenes/niveau_01.tscn::c1c7e1e92a95e5e542de6194c31c6d19::1765415546::res://.godot/exported/133200997/export-075521bc2916bd5fd7a7df1a35290b84-niveau_01.scn
+res://scenes/niveau_02.tscn::5d75317ca128c30e1a32da1e6fe69518::1762988384::res://.godot/exported/133200997/export-b00fc9fd3163ba4a4ed206296be31cf8-niveau_02.scn
+res://scenes/niveau_03.tscn::9ac88d3a97dfde532dee83a1f333fe41::1762987198::res://.godot/exported/133200997/export-2b1acb6cd952f17ca3c758d0b93a7618-niveau_03.scn
+res://scenes/obstacle.tscn::a3c4c1b2dbce88d41fd03097c868f4a6::1762293360::res://.godot/exported/133200997/export-4d229fce99bc30f190803dcf0c53b994-obstacle.scn
+res://scenes/player.tscn::9243282dbfad53314e2f1fd4fc4f9be2::1762987066::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://scenes/end_game_menu.tscn::182a996f4b0b1e95b3fa81a351cdc5a8::1765418136::res://.godot/exported/133200997/export-d8b7f946cf21a8a022abc0d390b09cee-end_game_menu.scn
+res://scenes/niveau_4.tscn::02df899bbe95d0d3ae8b109ca4d21565::1765418422::res://.godot/exported/133200997/export-889409aa0ee82f290e4812d08b5d7815-niveau_4.scn

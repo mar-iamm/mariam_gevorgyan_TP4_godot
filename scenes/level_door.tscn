@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://c4y3peyywdg6u"]
+
+[ext_resource type="Texture2D" uid="uid://dpac0kmwpegik" path="res://assets/Coins/door.png" id="1_7dh4e"]
+[ext_resource type="Script" uid="uid://cgaj3hfrhva1q" path="res://script/level_door.gd" id="1_brta1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_brta1"]
+size = Vector2(64.25903, 77.708595)
+
+[sub_resource type="Gradient" id="Gradient_brta1"]
+offsets = PackedFloat32Array(0, 0.74666667)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hm2c8"]
+gradient = SubResource("Gradient_brta1")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hm2c8"]
+size = Vector2(195.51682, 75.716064)
+
+[node name="LevelDoor" type="Area2D"]
+scale = Vector2(4.015, 4.015)
+collision_layer = 0
+script = ExtResource("1_brta1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.996265, 5.479453)
+shape = SubResource("RectangleShape2D_brta1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4.9999995, 0)
+scale = Vector2(0.105, 0.105)
+texture = ExtResource("1_7dh4e")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(-3.6114562, 3.2378607)
+scale = Vector2(2.2688355, 2.1248446)
+color = Color(0.84313726, 0.5882353, 0.21176471, 1)
+texture = SubResource("GradientTexture2D_hm2c8")
+
+[node name="NearDoor" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NearDoor"]
+position = Vector2(-5.105854, 3.4869251)
+shape = SubResource("RectangleShape2D_hm2c8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="body_entered" from="NearDoor" to="." method="_on_near_door_body_entered"]

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bh4wk6m57pfow"
+path="res://.godot/imported/Retro Event UI 01.wav-d99e198cafa9102c8897f5079d46f145.sample"
+
+[deps]
+
+source_file="res://assets/Sounds/Retro Event UI 01.wav"
+dest_files=["res://.godot/imported/Retro Event UI 01.wav-d99e198cafa9102c8897f5079d46f145.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

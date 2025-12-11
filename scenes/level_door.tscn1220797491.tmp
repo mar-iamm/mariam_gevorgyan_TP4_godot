@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4y3peyywdg6u"]
+
+[ext_resource type="Texture2D" uid="uid://dpac0kmwpegik" path="res://assets/Coins/door.png" id="1_7dh4e"]
+[ext_resource type="Script" uid="uid://cgaj3hfrhva1q" path="res://script/level_door.gd" id="1_brta1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7dh4e"]
+radius = 50.361244
+
+[node name="LevelDoor" type="Area2D"]
+scale = Vector2(4.015, 4.015)
+script = ExtResource("1_brta1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2.241594, 4.483188)
+shape = SubResource("CircleShape2D_7dh4e")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4.9999995, 0)
+scale = Vector2(0.105, 0.105)
+texture = ExtResource("1_7dh4e")
+
+[node name="Message" type="Node2D" parent="."]
+
+[node name="Etiquette" type="Label" parent="Message"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -75.467
+offset_top = -88.9203
+offset_right = 64.757164
+offset_bottom = -46.920303
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 10
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="show_message"]
+[connection signal="body_exited" from="." to="." method="hide_message"]

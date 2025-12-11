@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddkcls88s7gbo"]
+
+[ext_resource type="Texture2D" uid="uid://ih51ag6d0b43" path="res://assets/Coins/obstacle.png" id="1_7ukg5"]
+[ext_resource type="Script" uid="uid://bjtvfjw2dnmh" path="res://script/obstacle.gd" id="1_drdry"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ukg5"]
+size = Vector2(809, 645)
+
+[node name="Obstacle" type="Area2D"]
+script = ExtResource("1_drdry")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-34.5, 29.5)
+shape = SubResource("RectangleShape2D_7ukg5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(10.0000305, 2.0000153)
+scale = Vector2(0.65833336, 0.65833336)
+texture = ExtResource("1_7ukg5")
